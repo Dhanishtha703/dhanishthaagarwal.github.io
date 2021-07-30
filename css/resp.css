@@ -1,0 +1,134 @@
+
+@media (max-width:1024px){
+    header #main-nav{
+        display: none;
+    }
+
+    .hamberger{
+        display: block;
+    }
+
+    .hero .left img{
+        width: 260px;
+    }
+
+    .hero .right h1{
+        font-size: 3rem;
+    }
+
+    .hero{
+        padding-top: 11rem;
+    }
+
+    header{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 27% 89% , 0 100%);
+    }
+
+    section.about .about-me-img{
+        height: 360px;
+    }
+
+    section.services .card-wrapper{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (min-width: 576px){
+    .container{
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px){
+    .container{
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px){
+    .container{
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px){
+    .container{
+        max-width: 1152px;
+    }
+}
+
+@media (max-width: 576px){
+    .hero{
+        flex-direction: column;
+    }
+
+    header{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 69% 95% , 0 100%);
+    }
+
+    .hero .right{
+        position: absolute;
+        top:260px;
+        padding: 0 1rem;
+        background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.9));
+    }
+
+    .hero .left {
+        margin-top: -5rem;
+        margin-right: -9rem;
+        padding-bottom: 4rem;
+    }
+
+    .about-inner-wrap{
+        flex-direction: column;
+    }
+
+    .about .right{
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .about .right .social{
+        justify-content: center;
+    }
+
+    section{
+        padding: 4rem 0;
+    }
+
+    section.services .card-wrapper{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    section.freelancer h1{
+        line-height: 1.2;
+    }
+
+    section.freelancer{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 90% , 0 100%);
+        padding-bottom: 8rem;
+    }
+
+    section.contact .card-wrapper{
+        grid-template-columns: repeat(1,1fr);
+        grid-gap:2rem;
+        padding-top: -3rem;
+    }
+
+    section.contact .input-wrap{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+.hamberger.active .bar:nth-child(2){
+    opacity: 0;
+}
+
+.hamberger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamberger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+
